@@ -10,10 +10,10 @@ html은 트위치 방송에서 배웠습니다.
 <ul>
 찾아가는 사이트.
   <li><a href="https://translate.google.com/">구글 번역</a></li>
-  <li><a href="https://www.w3schools.com" rel="noopener noreferrer" target="_blank">w3schools</a></li>
-  <li><a href="https://getbootstrap.com/" rel="noopener noreferrer" target="_blank">bootstrap</a></li>
-  <li><a href="https://www.korean.go.kr/front/main.do" rel="noopener noreferrer" target="_blank">국립 국어원</a></li>
-  <li><a href="https://www.weather.go.kr/w/index.do" rel="noopener noreferrer" target="_blank"> 대한민국 기상청 날씨누리</a></li>
+  <li><a href="https://www.w3schools.com" target="_blank">w3schools</a></li>
+  <li><a href="https://getbootstrap.com/" target="_blank">bootstrap</a></li>
+  <li><a href="https://www.korean.go.kr/front/main.do" target="_blank">국립 국어원</a></li>
+  <li><a href="https://www.weather.go.kr/w/index.do" target="_blank"> 대한민국 기상청 날씨누리</a></li>
 </ul>
 <hr>
 
