@@ -363,7 +363,10 @@ body {
      width: 150px;
  }
  .footer .row .fa {
-     padding-right: 20px;
+     padding-right: 10px;
      font-size: 15px;
+ }
+ .footer a {
+     color: whitesmoke;
  }
  /* footer end*/
