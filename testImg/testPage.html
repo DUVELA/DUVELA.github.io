@@ -5,9 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <div class="top-nav-bar">
+        <div class="search-box">
+            <i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
+            <i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
+            <a href="../index.html"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+            <input type="text" class="form-control">
+            <span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
+        </div>
+        <div class="menu-bar">
+            <ul>
+                <li><a href="#"><i class="fa fa-shopping-basket"></i> cart</a></li>
+                <li><a href="#">Sign Up</a></li>
+                <li><a href="#">Log In</a></li>
+            </ul>
+        </div>
+    </div>
     <div class="testImg">
         <img style="-webkit-user-select: none;margin: auto;"
             src="https://raw.githubusercontent.com/DUVELA/testNotepad/master/html/img/basin_pop_up/20191111_1.jpg">
@@ -16,5 +34,6 @@
         <img style="-webkit-user-select: none;margin: auto;"
             src="https://raw.githubusercontent.com/DUVELA/testNotepad/master/html/img/basin_pop_up/20191111_3.jpg">
     </div>
+    
 </body>
 </html>
