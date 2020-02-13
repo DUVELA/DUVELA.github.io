@@ -2,8 +2,9 @@
     padding: 0; }
 
 body {
-     background-color: rgb(180, 180, 180);
+     background-color: #1C1C1F;
      font-family: sans-serif;
+     color: #e3e3e0;
 }
 /* youtube relative start*/
 .relative{
@@ -145,7 +146,10 @@ body {
      margin-top: 20px;
  }
  .col-md-7 h2 {
-     color: #555;
+     color: #e3e3e0;
+ }
+ .col-md-7 b {
+     color: #20cf20;
  }
  .single-product .fa {
      color: orange;
@@ -205,6 +209,7 @@ body {
     font-weight: bold;
     margin-top: 10px;
     cursor: pointer;
+    color: black;
 }
 
 .side-menu ul li:hover {
@@ -301,6 +306,11 @@ body {
     margin-left: 170px;
 }
 /* title-box end */
+/* .container .product-bottom start */
+.container .product-bottom i {
+    color: orange;
+}
+/* .container .product-bottom end */
 /* overlay-right start */
 .overlay-right {
     display: block;
