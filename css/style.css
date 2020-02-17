@@ -48,7 +48,8 @@ body {
     position: sticky;
     background-color: #fff;
     margin-bottom: 20px;
-    border-bottom: 3px solid orange;
+    background-image: url(../img/abstract-1861464_640.jpg);
+    /* border-bottom: 3px solid orange; */
     z-index: 2;
 }
 
@@ -91,7 +92,7 @@ body {
 }
 .menu-bar {
     width: 40%;
-    height: 57px;
+    height: 54px;
     float: right;
 }
 .menu-bar ul li {
@@ -108,11 +109,7 @@ body {
     color: #fff;
     text-decoration: none;
 }
-
-.fa-shopping-basket {
-    margin-right: 5px;
-}
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 1280px) {
     .top-nav-bar {
         height: 118px;
         border-bottom: 0;
@@ -188,6 +185,7 @@ body {
 
  .product-description hr {
      margin-bottom: 50px;
+     background-color: #ccc;
  }
  /* product-description end */
  /*----------- Side-menu CSS start ------------*/
@@ -196,8 +194,8 @@ body {
     width: 15%;
     font-size: 14px;
     float: left;
-    z-index: 2;
-    background-color: #ddd;
+    z-index: 1;
+    background-color: #bab197;
 }
 
 .side-menu ul {
@@ -209,11 +207,11 @@ body {
     font-weight: bold;
     margin-top: 10px;
     cursor: pointer;
-    color: black;
+    color: #1c1c1f;
 }
 
 .side-menu ul li:hover {
-    color: orange;
+    background-color: orange;
 }
 
 .side-menu ul li ul {
@@ -242,7 +240,7 @@ body {
     display: none;
 }
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 1280px) {
     .side-menu {
         width: 34%;
         z-index: 20;
@@ -275,13 +273,37 @@ body {
 .carousel-indicators {
     z-index: 1 !important;
 }
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 1280px) {
     .slider {
         width: 100%;
         margin-left: 0;
     }
 }
 /*----------slider CSS end----------*/
+/* ---featured-categories CSS start --- */
+.featured-categories {
+    margin: 50px 0;
+}
+.featured-categories img {
+    width: 100%;
+    padding: 20px 0;
+    transition: 1s;
+    cursor: pointer;
+}
+.featured-categories img:hover {
+    transform: scale(1.05);
+}
+.featured-categories .col-md-4 {
+    width: 100%;
+    margin-right: 10px;
+    padding: 20px 0;
+    transition: 1s;
+    cursor: pointer;
+}
+.featured-categories .col-md-4:hover {
+    transform: scale(1.05);
+}
+/* ---featured-categories CSS end --- */ 
 /* title-box start */
 .title-box {
     background-color: orange;
@@ -291,6 +313,8 @@ body {
     height: 40px;
     margin-bottom: 30px;
     display: flex;
+    border: 2px solid #fff;
+    border-radius: 50px 20px;
 }
 .title-box h2 {
     font-size: 24px;
@@ -298,8 +322,9 @@ body {
 
 .title-box::after {
     content: '';
-    border-top: 40px solid orange;
-    border-right: 50px solid transparent;
+    /* border-top: 40px solid greenyellow; */
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
     position: absolute;
     display: flex;
     margin-top: -4px;
