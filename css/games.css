@@ -46,3 +46,16 @@ td:nth-child(2) { width: 770px;           }
 /* .side-menu start -style.css의 .side-menu. Game에서만 쓸 것 같아서 따로 빼놨다.*/
 .side-menu { display: none;  }
 /* .side-menu end */
+
+/* game- vertical start */
+.vertical {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centered-left {
+  position: absolute;
+  top: 65%;
+  left: 16px;
+}
+/* game- vertical end */
