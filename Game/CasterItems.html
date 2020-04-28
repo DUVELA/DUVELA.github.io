@@ -9,13 +9,58 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css">
   </head>
   <body>
+    <div class="top-nav-bar">
+      <div class="search-box">
+        <i class="fa fa-bars" id="menu-btn" onclick="openmenu()" style="display: block;"></i>
+        <i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
+        <a href="../index.html"><img style="-webkit-user-select: none;" class="logo"
+            src="https://raw.githubusercontent.com/DUVELA/testNotepad/d6b902072397e82def74e7042dcd4a8ad4fb6760/html/img/%ED%81%AC%EA%B8%B0%20%EB%A7%9E%EC%B6%A4%EC%9A%A9.jpg"></a>
+        <input type="text" class="form-control" value="기능 없음. function is not here :)">
+        <span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
+      </div>
+      <div class="menu-bar">
+        <ul>
+          <li><a href="mailto:cky21525@gmail.com?Subject=Hello%20again%20from%20https://duvela.github.io/" target="_top"><i
+                class="fa fa-envelope" aria-hidden="true"></i> Email</a></li>
+          <li><a href="https://fontawesome.com/v4.7.0/icons/" target="_blank"><i class="fa fa-flag" aria-hidden="true"></i>
+              Icons</a>
+          </li>
+          <li><a href="https://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>
+              GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- header section start -->
+    <section class="header">
+      <div class="side-menu" id="side-menu">
+        <ul>
+          <li>게임(Game)<i class="fa fa-angle-right"></i>
+            <ul>
+              <li><a href="../Game/D2.html">Diablo2</a></li>
+              <li>Path of Exile</li>
+              <li>Sub Menu-1</li>
+              <li>Sub Menu-1</li>
+            </ul>
+          </li>
+          <li>일상<br>(a record of ordinary days)<i class="fa fa-angle-right"></i>
+            <ul>
+              <li><a href="../record/basin_pop_up_plug.html">basin pop up</a></li>
+              <li><a href="../record/doorRoller.html">호차(戶車)</a></li>
+              <li><a href="../record/etc.html">etc</a></li>
+              <li>Sub Menu-1</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- header section end -->
     <div class="sidebanner">
+        <a href="D2.html">about</a>
         <a href="BloodItems.html">BloodItems</a>
         <a href="CasterItems.html"><u>CasterItems</u></a>
         <a href="HitPowerItems.html">HitPowerItems</a>
         <a href="SafetyItems.html">SafetyItems</a>
-        <a href="../index.html"><img style="-webkit-user-select: none;" class="logo"
-            src="https://raw.githubusercontent.com/DUVELA/testNotepad/d6b902072397e82def74e7042dcd4a8ad4fb6760/html/img/%ED%81%AC%EA%B8%B0%20%EB%A7%9E%EC%B6%A4%EC%9A%A9.jpg"></a>
     </div>
     <div id="crafting-main">
       <table>
@@ -147,9 +192,7 @@
       </table>
       <p><strong>Note</strong>: Rods are Scepters, Wands, and Staves.</p>
       <small>
-        <a class="tiny" href="http://us.blizzard.com/en-us/company/about/privacy.html">Online Privacy Policy</a><br>
-        <a class="tiny" href="/tou.shtml">Battle.net Terms of Use Agreement</a><br>
-        <a class="tiny" href="http://us.blizzard.com/en-us/company/about/legal-faq.html">©2019 Blizzard Entertainment. All rights reserved.</a>
+        출처: <a href="http://classic.battle.net/diablo2exp/items/crafted/caster.shtml">arreat summit</a>
       </small>
     </div>
     <!-- Footer start -->
@@ -202,5 +245,20 @@
       </div>
     </section>
     <!-- Footer end -->
+    <!-- open && close menu() start -->
+    <script>
+      function openmenu() {
+        document.getElementById("side-menu").style.display = "block"
+        document.getElementById("menu-btn").style.display = "none"
+        document.getElementById("close-btn").style.display = "block"
+      }
+
+      function closemenu() {
+        document.getElementById("side-menu").style.display = "none"
+        document.getElementById("menu-btn").style.display = "block"
+        document.getElementById("close-btn").style.display = "none"
+      }
+    </script>
+    <!-- open && close menu() end -->
   </body>
 </html>

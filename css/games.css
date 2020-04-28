@@ -1,5 +1,6 @@
 
 /* table start */
+table         { margin-left: 41px;}
 table, th, td { border: 1px solid black;
                 border-collapse: collapse;
                 padding: 5px;
@@ -7,7 +8,9 @@ table, th, td { border: 1px solid black;
 
 #crafting-main { margin-left: 160px; /* Same as the width of the sidenav */
                  font-size: 16px; /* Increased text to enable scrolling */
-                 padding: 0px 10px;}
+                 padding: 0px 10px;
+                 z-index: -1;
+                }         
 #crafting-main td, #crafting-main th {
     border: 1px solid #ddd;
 }
@@ -15,15 +18,16 @@ td:nth-child(1) { width: 224px;           }
 td:nth-child(2) { width: 770px;           }
 /* table end */
 /* sidebanner start */
-.sidebanner { height: 100%;
-              width: 160px;
+.sidebanner { width: 160px;
+              z-index: 0;
               position: fixed;
-              z-index: 1;
+              margin-top: 57px;
               top: 0;
               left: 0;
               background-color: #111;
+              /* height: 100%; */
               overflow-x: hidden;
-              padding-top: 20px;          }
+              padding-top: 60px;         }
 
 .sidebanner a { padding: 8px 8px 8px 6px;
                 text-decoration: none;
@@ -31,5 +35,14 @@ td:nth-child(2) { width: 770px;           }
                 color: #818181;
                 display: block;           }
 
-.sidebanner a:hover { color: #f1f1f1;     }
+.sidebanner a:hover { color: #f1f1f1;   }
+#asia         { max-width: 90%;
+                margin-left: 180px;       }
+
+#aboutRelative { max-width: 600px; margin-left: 180px;}
+
 /* sidebanner end */
+
+/* .side-menu start -style.css의 .side-menu. Game에서만 쓸 것 같아서 따로 빼놨다.*/
+.side-menu { display: none;  }
+/* .side-menu end */

@@ -17,7 +17,7 @@
 <body>
     <div class="top-nav-bar">
         <div class="search-box">
-            <i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
+            <i class="fa fa-bars" id="menu-btn" onclick="openmenu()" style="display: block;"></i>
             <i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
             <a href="./index.html"><img style="-webkit-user-select: none;" class="logo"
                     src="https://raw.githubusercontent.com/DUVELA/testNotepad/d6b902072397e82def74e7042dcd4a8ad4fb6760/html/img/%ED%81%AC%EA%B8%B0%20%EB%A7%9E%EC%B6%A4%EC%9A%A9.jpg"></a>
@@ -31,35 +31,36 @@
                 <li><a href="https://fontawesome.com/v4.7.0/icons/" target="_blank"><i class="fa fa-flag"
                             aria-hidden="true"></i> Icons</a>
                 </li>
-                <li><a href="https://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>
-                        GitHub</a></li>
+                <li><a href="https://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+                </li>
             </ul>
         </div>
     </div>
+
     <!-- header section start -->
     <section class="header">
-            <div class="side-menu" id="side-menu">
-                <ul>
-                    <li>게임(Game)<i class="fa fa-angle-right"></i>
-                        <ul>
-                            <li>Diablo2</li>
-                            <li>Path of Exile</li>
-                            <li>Sub Menu-1</li>
-                            <li>Sub Menu-1</li>
-                        </ul>
-                    </li>
-                    <li>일상(daily)<i class="fa fa-angle-right"></i>
-                        <ul>
-                            <li><a href="./record/basin_pop_up_plug.html">basin pop up</a></li>
-                            <li><a href="./record/doorRoller.html">호차(戶車)</a></li>
-                            <li>Sub Menu-1</li>
-                            <li>Sub Menu-1</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
+        <div class="side-menu" id="side-menu">
+            <ul>
+                <li>게임(Game)<i class="fa fa-angle-right"></i>
+                    <ul>
+                        <li><a href="./Game/D2.html">Diablo2</a></li>
+                        <li>Path of Exile</li>
+                        <li>Sub Menu-1</li>
+                        <li>Sub Menu-1</li>
+                    </ul>
+                </li>
+                <li>일상<br>(a record of ordinary days)<i class="fa fa-angle-right"></i>
+                    <ul>
+                        <li><a href="./record/basin_pop_up_plug.html">basin pop up</a></li>
+                        <li><a href="./record/doorRoller.html">호차(戶車)</a></li>
+                        <li><a href="./record/etc.html">etc</a></li>
+                        <li>Sub Menu-1</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- header section end -->
         
     <!------------ featured-categories ---------->
     <section class="featured-categories">

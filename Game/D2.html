@@ -4,14 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/games.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/toggle.css">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+    <style>
+        #aboutRelative { max-width: 600px; margin-left: 180px;}
+        @media only screen and (max-width: 980px) {
+            #asia       { max-width: 90%;
+                          margin: 20px;     }
+            #aboutRelative { margin: 0; }
+            #crafting-main { margin: 0; }
+            #sidebanner{ display: none;}
+        }
+    </style>
 </head>
 
 <body>
@@ -32,7 +44,8 @@
                             aria-hidden="true"></i> Icons</a>
                 </li>
                 <li><a href="https://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>
-                        GitHub</a></li>
+                        GitHub</a>
+                </li>
             </ul>
         </div>
     </div>
@@ -51,9 +64,9 @@
                 </li>
                 <li>일상<br>(a record of ordinary days)<i class="fa fa-angle-right"></i>
                     <ul>
-                        <li><a href="basin_pop_up_plug.html">basin pop up</a></li>
-                        <li><a href="doorRoller.html">호차(戶車)</a></li>
-                        <li><a href="etc.html">etc</a></li>
+                        <li><a href="../record/basin_pop_up_plug.html">basin pop up</a></li>
+                        <li><a href="../record/doorRoller.html">호차(戶車)</a></li>
+                        <li><a href="../record/etc.html">etc</a></li>
                         <li>Sub Menu-1</li>
                     </ul>
                 </li>
@@ -61,92 +74,40 @@
         </div>
     </section>
     <!-- header section end -->
+    <!-- sidebanner start -->
+    <div class="sidebanner" id="sidebanner">
+        <a href="D2.html"><u>about</u></a>
+        <a href="BloodItems.html">BloodItems</a>
+        <a href="CasterItems.html">CasterItems</a>
+        <a href="HitPowerItems.html">HitPowerItems</a>
+        <a href="SafetyItems.html">SafetyItems</a>
+    </div>
+    <!-- sidebanner end -->
+    <!-- toggle on off start -->
+    <label class="switch" style="margin-left: 180px;">
+        <input type="checkbox" onclick="sidebanner()" id="sidebannerOnOff" checked>
+        <span class="slider"></span>
+    </label>
+    <p id="toggleOff"></p>
+    <p id="toggleOn" style="display:none;"></p>
+    <!-- toggle on off end -->
+    <br>
+    <img id="asia" src="D:\game\d1\D1Key\D2_asia.jpg" alt="">
 
-    <!-- Single Product -->
-    <section class="single-product">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5">
-                    <div id="product-slider" class="carousel slide carousel-fade" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img style="-webkit-user-select: none;margin: auto;"
-                                    src="https://raw.githubusercontent.com/DUVELA/testNotepad/master/html/img/%ED%98%B8%EC%B0%A8(%E6%88%B6%E8%BB%8A)/20200131.jpg"
-                                    class="d-block">
-                            </div>
-                            <a class="carousel-control-prev" href="#product-slider" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#product-slider" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-7">
-                    <p class="new-arrival text-center">Change</p>
-                    <h2>호차(戶車)</h2>
-                    <h2>(door roller)</h2>
-                    <p class="price">&nbsp</p>
-                    <p><b>위치:</b> 베란다.</p>
-                    <p><b>상태:</b> 망가지고 노후해서 두개 같이 교체.</p>
-                    <p><b>기분:</b> <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
-                        <i class="fa fa-star-o"></i></p>
-                    <!-- <label>Quantity:</label>
-                    <input type="text" value="1">
-                    <button type="button" class="btn btn-primary">Add to cart</button> -->
-                </div>
-            </div>
+    <div id="aboutRelative">
+            <div class="relative">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0oG6ozmRdVo" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-    </section>
-
-    <section class="product-description">
-        <div class="container">
-            <h6></h6>
-            <p></p>
-        </div>
-        <hr>
-        <!-- container Similar -->
-        <div class="container">
-            <div class="title-box">
-                <h2>일상</h2>
-            </div>
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="product-top">
-                        <img style="-webkit-user-select: none;margin: auto;"
-                            src="https://raw.githubusercontent.com/DUVELA/testNotepad/master/html/img/basin_pop_up/20191111_3.jpg">
-                        <div class="overlay-right">
-                            <a href="basin_pop_up_plug.html"><button type="button" class="btn btn-secondary" title="Go to Page">
-                                    <i class="fa fa-eye"></i>
-                                </button></a>
-                            <button type="button" class="btn btn-secondary" title="-">
-                                <i class="fa fa-heart-o"></i>
-                            </button>
-                            <button type="button" class="btn btn-secondary" title="-">
-                                <i class="fa fa-shopping-bag"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="product-bottom text-center">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <h3>세면대 폽업<br>(Basin Pop Up Plug)</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
+    </div>
+    <div id="crafting-main">
+    <small>
+        알게된: <a href="https://phrozenkeep.blob.core.windows.net/public/files/resources/BeginnerGuide-v14.pdf"target="_blank">내용.</a><br>
+        싱글용: <a href="https://github.com/DUVELA/game/tree/master/diablo2">큐빙</a> 다운로드 파일 올리는걸 모르겠다.<br>
+        출처: <a href="http://classic.battle.net/diablo2exp/items/crafted/caster.shtml" target="_blank">arreat summit</a>
+    </small>
+    </div>
+    <!-- Footer start -->
     <section class="footer">
         <div class="container tex-center">
             <div class="row">
@@ -154,14 +115,14 @@
                     <h1>Useful Links</h1>
                     <p><a href="https://www.weather.go.kr/w/index.do" target="_blank"><i class="fa fa-cloud"
                                 aria-hidden="true"> Weather-Kor</i></a></p>
-                    <p><a href="https://www.korean.go.kr/front/main.do" target="_blank">&nbsp;<i
-                                class="fa fa-exclamation" aria-hidden="true">&nbsp;&nbsp;국립국어원</i></a></p>
+                    <p><a href="https://www.korean.go.kr/front/main.do" target="_blank">&nbsp;<i class="fa fa-exclamation"
+                                aria-hidden="true">&nbsp;&nbsp;국립국어원</i></a></p>
                     <p><a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow"
                                 aria-hidden="true"> stackoverflow</i></a></p>
                     <p><a href="https://translate.google.com/" target="_blank"><i style="color: springgreen;"
                                 class="fa fa-globe" aria-hidden="true"></i>translate.google</a></p>
                 </div>
-
+    
                 <div class="col-md-3">
                     <h1>Company</h1>
                     <p>About Us - None</p>
@@ -169,7 +130,7 @@
                     <p>Career - None</p>
                     <p>Affiliate - None</p>
                 </div>
-
+    
                 <div class="col-md-3">
                     <h1>Sometime</h1>
                     <p><a href="https://www.youtube.com/" target="_blank"><i style="color: red;"
@@ -185,8 +146,8 @@
                     <h1>Download</h1>
                     <p><a href="https://git-scm.com/downloads" target="_blank"><i class="fa fa-code-fork"
                                 aria-hidden="true"> git</i></a></p>
-                    <p><a href="https://code.visualstudio.com/" target="_blank"><i class="fa fa-globe-o"
-                                aria-hidden="true"> VSCode</i></a></p>
+                    <p><a href="https://code.visualstudio.com/" target="_blank"><i class="fa fa-globe-o" aria-hidden="true">
+                                VSCode</i></a></p>
                     <p><a href="https://scala-lang.org/" target="_blank"><i class="fa fa-globe-o" aria-hidden="true">
                                 Scala</i></a></p>
                     <p><a href="https://openjdk.java.net/" target="_blank"><i class="fa fa-globe-o"
@@ -197,7 +158,7 @@
             <p class="copyright">Made with <i class="fa fa-heart-o"></i> by Duvela</p>
         </div>
     </section>
-
+    <!-- Footer end -->
     <script>
         function openmenu() {
             document.getElementById("side-menu").style.display = "block"
@@ -210,7 +171,19 @@
             document.getElementById("menu-btn").style.display = "block"
             document.getElementById("close-btn").style.display = "none"
         }
+
+        
+    </script>
+    <script>
+      function sidebanner() {
+            var checkBox = document.getElementById("sidebannerOnOff");
+            var sidebanner = document.getElementById("sidebanner");
+            if (checkBox.checked == true) {
+                sidebanner.style.display = "block";
+            } else {
+                sidebanner.style.display = "none";
+            }
+        }
     </script>
 </body>
-
 </html>
