@@ -52,7 +52,7 @@
 
     <!-- header section start -->
     <section class="header">
-        <div class="side-menu" id="side-menu">
+        <div class="side-menu" id="side-menu" style="display: none;">
             <ul>
                 <li>게임(Game)<i class="fa fa-angle-right"></i>
                     <ul>
@@ -75,21 +75,26 @@
     </section>
     <!-- header section end -->
     <!-- sidebanner start -->
-    <div class="sidebanner" id="sidebanner">
-        <a href="D2.html"><u>about</u></a>
-        <a href="BloodItems.html">BloodItems</a>
-        <a href="CasterItems.html">CasterItems</a>
-        <a href="HitPowerItems.html">HitPowerItems</a>
-        <a href="SafetyItems.html">SafetyItems</a>
+    <div class="headWrap">
+        <div id="mySidenav" class="sidenav" onclick="closeNav()">
+            <a href="D2.html">about</a>
+            <a href="BloodItems.html">BloodItems</a>
+            <a href="CasterItems.html">CasterItems</a>
+            <a href="HitPowerItems.html">HitPowerItems</a>
+            <a href="SafetyItems.html"><u>SafetyItems</u></a>
+        </div>
+        <h2>Animated Sidenav Example</h2>
+        <p>Click on the element below to open the side navigation menu.</p>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
     </div>
     <!-- sidebanner end -->
     <!-- toggle on off start -->
-    <label class="switch" style="margin-left: 180px;">
+    <!-- <label class="switch" style="margin-left: 180px;">
         <input type="checkbox" onclick="sidebanner()" id="sidebannerOnOff" checked>
         <span class="slider"></span>
     </label>
     <p id="toggleOff"></p>
-    <p id="toggleOn" style="display:none;"></p>
+    <p id="toggleOn" style="display:none;"></p> -->
     <!-- toggle on off end -->
     <br>
     <img style="margin-left: 190px;" src="https://raw.githubusercontent.com/DUVELA/game/master/diablo2/img/Diablo2_Asia.jpg">
@@ -161,28 +166,25 @@
     <!-- Footer end -->
     <script>
         function openmenu() {
-            document.getElementById("side-menu").style.display = "block"
-            document.getElementById("menu-btn").style.display = "none"
-            document.getElementById("close-btn").style.display = "block"
+            document.getElementById("side-menu").style.display = "block";
+            document.getElementById("menu-btn").style.display = "none";
+            document.getElementById("close-btn").style.display = "block";
         }
 
         function closemenu() {
-            document.getElementById("side-menu").style.display = "none"
-            document.getElementById("menu-btn").style.display = "block"
-            document.getElementById("close-btn").style.display = "none"
+            document.getElementById("side-menu").style.display = "none";
+            document.getElementById("menu-btn").style.display = "block";
+            document.getElementById("close-btn").style.display = "none";
+        }
+    </script>
+    <!-- new2020-05-13 -->
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
         }
 
-        
-    </script>
-    <script>
-      function sidebanner() {
-            var checkBox = document.getElementById("sidebannerOnOff");
-            var sidebanner = document.getElementById("sidebanner");
-            if (checkBox.checked == true) {
-                sidebanner.style.display = "block";
-            } else {
-                sidebanner.style.display = "none";
-            }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
         }
     </script>
 </body>

@@ -1,264 +1,231 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+
+<head>
     <meta charset="utf-8">
-    <title>crafting_CasterItems</title>
+    <title>crafting_BloodItems</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/newStyle.css">
     <link rel="stylesheet" type="text/css" href="../css/games.css">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-  </head>
-  <body>
-    <div class="top-nav-bar">
-      <div class="search-box">
-        <i class="fa fa-bars" id="menu-btn" onclick="openmenu()" style="display: block;"></i>
-        <i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
-        <a href="../index.html"><img style="-webkit-user-select: none;" class="logo"
-            src="https://raw.githubusercontent.com/DUVELA/testNotepad/d6b902072397e82def74e7042dcd4a8ad4fb6760/html/img/%ED%81%AC%EA%B8%B0%20%EB%A7%9E%EC%B6%A4%EC%9A%A9.jpg"></a>
-        <input type="text" class="form-control" value="기능 없음. function is not here :D">
-        <span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
-      </div>
-      <div class="menu-bar">
-        <ul>
-          <li><a href="mailto:cky21525@gmail.com?Subject=Hello%20again%20from%20https://duvela.github.io/" target="_top"><i
-                class="fa fa-envelope" aria-hidden="true"></i> Email</a></li>
-          <li><a href="https://fontawesome.com/v4.7.0/icons/" target="_blank"><i class="fa fa-flag" aria-hidden="true"></i>
-              Icons</a>
-          </li>
-          <li><a href="https://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>
-              GitHub</a></li>
-        </ul>
-      </div>
-    </div>
-    
-    <!-- header section start -->
-    <section class="header">
-      <div class="side-menu" id="side-menu">
-        <ul>
-          <li>게임(Game)<i class="fa fa-angle-right"></i>
-            <ul>
-              <li><a href="../Game/D2.html">Diablo2</a></li>
-              <li>Path of Exile</li>
-              <li>Sub Menu-1</li>
-              <li>Sub Menu-1</li>
-            </ul>
-          </li>
-          <li>일상<br>(a record of ordinary days)<i class="fa fa-angle-right"></i>
-            <ul>
-              <li><a href="../record/basin_pop_up_plug.html">basin pop up</a></li>
-              <li><a href="../record/doorRoller.html">호차(戶車)</a></li>
-              <li><a href="../record/etc.html">etc</a></li>
-              <li>Sub Menu-1</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!-- header section end -->
-    <div class="sidebanner">
-        <a href="D2.html">about</a>
-        <a href="BloodItems.html">BloodItems</a>
-        <a href="CasterItems.html"><u>CasterItems</u></a>
-        <a href="HitPowerItems.html">HitPowerItems</a>
-        <a href="SafetyItems.html">SafetyItems</a>
-    </div>
-    <div id="crafting-main">
-      <table>
-        <tbody>
-          <tr>
-            <th>Crafted Item</th>
-            <th>Crafted Recipe</th>
-            <th>Crafted image</th>
-            <th>Fixed Effects</th>
-          </tr>
-          <tr>
-            <td>Caster Helm</td>
-            <td>Magic Mask/Death Mask/Demonhead Mask<br>
-              Nef Rune<br>
-              Perfect Amethyst<br>
-              Any Jewel
-            </td>
-            <td><img src="img/caster/CasterHelm.jpg" alt=""></td>
-            <td>(1-4)% Mana Stolen Per Hit<br>
-              Regenerate Mana (4-10)%<br>
-              + (10-20) <n style="color:#33f;">To Mana</n>
-            </td>
-          </tr>
-          <tr>
-            <td>Caster Boots</td>
-            <td>Magic Boots/Demonhide Boots/Wyrmhide Boots<br>
-              Thul Rune<br>
-              Perfect Amethyst<br>
-              Any Jewel
-            </td>
-            <td><img src="img/caster/CasterBoots.jpg" alt=""></td>
-            <td>Increase Maximum Mana (2-5)%<br>
-              Regenerate Mana (4-10)%<br>
-              + (10-20) <n style="color:#33f;">To Mana</n>
-            </td>
-          </tr>
-          <tr>
-            <td>Caster Gloves</td>
-            <td>Magic Leather Gloves/Demonhide Gloves/Bramble Mitts<br>
-              Ort Rune<br>
-              Perfect Amethyst<br>
-              Any Jewel
-            </td>
-            <td><img src="img/caster/CasterGloves.jpg" alt=""></td>
-            <td>+ (1-3) Mana Per Kill<br>
-              Regenerate Mana (4-10)%<br>
-              + (10-20) <n style="color:#33f;">To Mana</n>
-            </td>
-          </tr>
-          <tr>
-            <td>Caster Belt</td>
-            <td>Magic Light Belt/Sharkskin Belt/Vampirefang Belt<br>
-              Ith Rune<br>
-              Perfect Amethyst<br>
-              Any Jewel
-            </td>
-            <td><img src="img/caster/CasterBelt.jpg" alt=""></td>
-            <td>5-10% <n style="color:#f33;">Faster Cast Rate</n><br>
-              Regenerate Mana (4-10)%<br>
-              + (10-20) <n style="color:#33f;">To Mana</n>
-            </td>
-          </tr>
-          <tr>
-            <td>Caster Shield</td>
-            <td>Magic Small Shield/Round Shield/Luna<br>
-              Eth Rune<br>
-              Perfect Amethyst<br>
-              Any Jewel
-            </td>
-            <td><img src="img/caster/CasterShield.jpg" alt=""></td>
-            <td>+ (5-10)% Increased Chance Of Blocking<br>
-              Regenerate Mana (4-10)%<br>
-              + (10-20) <n style="color:#33f;">To Mana</n>
-            </td>
-          </tr>
-          <tr>
-            <td>Caster Body</td>
-            <td>Magic Light Plate/Mage Plate/Archon Plate<br>
-              Tal Rune<br>
-              Perfect Amethyst<br>
-              Any Jewel
-            </td>
-            <td><img src="img/caster/CasterBody.jpg" alt=""></td>
-            <td>+ (1-3) Mana Per Kill<br>
-              Regenerate Mana (4-10)%<br>
-              + (10-20) <n style="color:#33f;">To Mana</n>
-            </td>
-          </tr>
-          <tr>
-            <td>Caster Amulet</td>
-            <td>Magic Amulet<br>
-              Ral Rune<br>
-              Perfect Amethyst<br>
-              Any Jewel
-            </td>
-            <td><img src="img/caster/CasterAmulet.jpg" alt=""></td>
-            <td>(5-10)% <n style="color:#f33;">Faster Cast Rate</n><br>
-              Regenerate Mana (4-10)%<br>
-              + (10-20) <n style="color:#33f;">To Mana</n>
-            </td>
-          </tr>
-          <tr>
-            <td>Caster Ring</td>
-            <td>Magic Ring<br>
-              Amn Rune<br>
-              Perfect Amethyst<br>
-              Any Jewel
-            </td>
-            <td><img src="img/caster/CasterRing.jpg" alt=""></td>
-            <td>+ (1-5) To Energy<br>
-              Regenerate Mana (4-10)%<br>
-              + (10-20) <n style="color:#33f;">To Mana</n>
-            </td>
-          </tr>
-          <tr>
-            <td>Caster Weapon</td>
-            <td>Magic Normal/Exceptional/Elite Rod**<br>
-              Tir Rune<br>
-              Perfect Amethyst<br>
-              Any Jewel<br>
-            </td>
-            <td><img src="img/caster/CasterWeapon.jpg" alt=""></td>
-            <td>Increase Maximum Mana (1-5)%<br>
-              Regenerate Mana (4-10)%<br>
-              + (10-20) <n style="color:#33f;">To Mana</n>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <p><strong>Note</strong>: Rods are Scepters, Wands, and Staves.</p>
-      <small>
-        출처: <a href="http://classic.battle.net/diablo2exp/items/crafted/caster.shtml">arreat summit</a>
-      </small>
-    </div>
-    <!-- Footer start -->
-    <section class="footer">
-      <div class="container tex-center">
-        <div class="row">
-          <div class="col-md-3">
-            <h1>Useful Links</h1>
-            <p><a href="https://www.weather.go.kr/w/index.do" target="_blank"><i class="fa fa-cloud" aria-hidden="true">
-                  Weather-Kor</i></a></p>
-            <p><a href="https://www.korean.go.kr/front/main.do" target="_blank">&nbsp;<i class="fa fa-exclamation"
-                  aria-hidden="true">&nbsp;&nbsp;국립국어원</i></a></p>
-            <p><a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true">
-                  stackoverflow</i></a></p>
-            <p><a href="https://translate.google.com/" target="_blank"><i style="color: springgreen;" class="fa fa-globe"
-                  aria-hidden="true"></i>translate.google</a></p>
-          </div>
-          <div class="col-md-3">
-            <h1>Company</h1>
-            <p>About Us - None</p>
-            <p>Contact Us - None</p>
-            <p>Career - None</p>
-            <p>Affiliate - None</p>
-          </div>
-          <div class="col-md-3">
-            <h1>Sometime</h1>
-            <p><a href="https://www.youtube.com/" target="_blank"><i style="color: red;"
-                  class="fa fa-youtube-play"></i>YouTube</a></p>
-            <p><a href="https://www.twitch.tv" target="_blank"><i style="color: slateblue;"
-                  class="fa fa-twitch"></i>Twitch</a></p>
-            <p><a href="https://slack.com" target="_blank"><i class="fa fa-slack"></i> Slack</a>
-            </p>
-            <p><a href="https://www.linkedin.com/" target="_blank"><i style="color: skyblue;" class="fa fa-linkedin-square"
-                  aria-hidden="true"></i> Linkedin</a></p>
-          </div>
-          <div class="col-md-3 footer-image">
-            <h1>Download</h1>
-            <p><a href="https://git-scm.com/book/ko/v2" target="_blank"><i class="fa fa-code-fork" aria-hidden="true">
-                  git</i></a></p>
-            <p><a href="https://code.visualstudio.com/" target="_blank"><i class="fa fa-globe-o" aria-hidden="true">
-                  VSCode</i></a></p>
-            <p><a href="https://scala-lang.org/" target="_blank"><i class="fa fa-globe-o" aria-hidden="true">
-                  Scala</i></a></p>
-            <p><a href="https://openjdk.java.net/" target="_blank"><i class="fa fa-globe-o"
-                  aria-hidden="true">OpenJDK</i></a></p>
-          </div>
-        </div>
-        <hr>
-        <p class="copyright">Made with <i class="fa fa-heart-o"></i> by Duvela</p>
-      </div>
-    </section>
-    <!-- Footer end -->
-    <!-- open && close menu() start -->
-    <script>
-      function openmenu() {
-        document.getElementById("side-menu").style.display = "block"
-        document.getElementById("menu-btn").style.display = "none"
-        document.getElementById("close-btn").style.display = "block"
-      }
+    <!-- <link rel="stylesheet" type="text/css" href="../css/style.css"> -->
+    <style>
 
-      function closemenu() {
-        document.getElementById("side-menu").style.display = "none"
-        document.getElementById("menu-btn").style.display = "block"
-        document.getElementById("close-btn").style.display = "none"
-      }
+    </style>
+</head>
+
+<body>
+    <div class="headWrap">
+        <div id="mySidenav" class="sidenav" onclick="closeNav()">
+            <a href="D2.html">about</a>
+            <a href="BloodItems.html">BloodItems</a>
+            <a href="CasterItems.html"><u>CasterItems</u></a>
+            <a href="HitPowerItems.html">HitPowerItems</a>
+            <a href="SafetyItems.html">SafetyItems</a>
+        </div>
+        <h2>Animated Sidenav Example</h2>
+        <p>Click on the element below to open the side navigation menu.</p>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+    </div>
+    <div class="mainWrap">
+        <div id="crafting-main">
+            <table class="myTable" style="background-color: #eee6c4;">
+                <!-- Helm -->
+                <tr>
+                    <td rowspan="3" class="craftType">Caster Helm<br>
+                    <td class="itemBase">Mask</td>
+                    <td rowspan="3">
+                        Nef Rune<br>
+                        Perfect Amethyst<br>
+                        Any Jewel
+                    </td>
+                    <td rowspan="3"><img class="raw" src="../img/diablo/caster/CasterHelm.jpg" alt=""></td>
+                    <td class="FixedEffects" rowspan="3">(1-4)% Mana Stolen Per Hit<br>
+                        Regenerate Mana (4-10)%<br>
+                        + (10-20) <n style="color:#33f;">To Mana</n>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="itemBase">Death Mask</td>
+                </tr>
+                <tr>
+                    <td class="itemBase">Demonhead Mask</td>
+                </tr>
+                <!-- Boots -->
+                <tr>
+                    <td rowspan="3" class="craftType">Caster Boots<br>
+                    <td class="itemBase">Boots</td>
+                    <td rowspan="3">
+                        Thul Rune<br>
+                        Perfect Amethyst<br>
+                        Any Jewel
+                    </td>
+                    <td rowspan="3"><img class="raw" src="../img/diablo/caster/CasterBoots.jpg" alt=""></td>
+                    <td class="FixedEffects" rowspan="3">Increase Maximum Mana (2-5)%<br>
+                        Regenerate Mana (4-10)%<br>
+                        + (10-20) <n style="color:#33f;">To Mana</n>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="itemBase">Demonhide Boots</td>
+                </tr>
+                <tr>
+                    <td class="itemBase">Wyrmhide Boots</td>
+                </tr>
+                <!-- Gloves -->
+                <tr>
+                    <td rowspan="3" class="craftType">Caster Gloves<br>
+                    <td class="itemBase">Leather Gloves</td>
+                    <td rowspan="3">
+                        Ort Rune<br>
+                        Perfect Amethyst<br>
+                        Any Jewel
+                    </td>
+                    <td rowspan="3"><img class="raw" src="../img/diablo/caster/CasterGloves.jpg" alt=""></td>
+                    <td class="FixedEffects" rowspan="3">
+                        + (1-3) Mana Per Kill<br>
+                        Regenerate Mana (4-10)%<br>
+                        + (10-20) <n style="color:#33f;">To Mana</n>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="itemBase">Demonhide Gloves</td>
+                </tr>
+                <tr>
+                    <td class="itemBase">Bramble Mitts</td>
+                </tr>
+                <!-- Belt -->
+                <tr>
+                    <td rowspan="3" class="craftType">Caster Belt<br>
+                    <td class="itemBase">Light Belt</td>
+                    <td rowspan="3">
+                        Tal Rune<br>
+                        Perfect Ruby<br>
+                        Any Jewel
+                    </td>
+                    <td rowspan="3"><img class="raw" src="https://raw.githubusercontent.com/DUVELA/game/master/diablo2/img/caster/CasterBelt.jpg" alt=""></td>
+                    <td class="FixedEffects" rowspan="3">5-10% <n style="color:#f33;">Faster Cast Rate</n><br>
+                        Regenerate Mana (4-10)%<br>
+                        + (10-20) <n style="color:#33f;">To Mana</n>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="itemBase">Sharkskin Belt</td>
+                </tr>
+                <tr>
+                    <td class="itemBase">Vampirefang Belt</td>
+                </tr>
+                <!-- Shield -->
+                <tr>
+                    <td rowspan="3" class="craftType">Caster Shield<br>
+                    <td class="itemBase">Small Shield</td>
+                    <td rowspan="3">
+                        Eth Rune<br>
+                        Perfect Amethyst<br>
+                        Any Jewel
+                    </td>
+                    <td rowspan="3"><img class="raw" src="../img/diablo/caster/CasterShield.jpg" alt=""></td>
+                    <td class="FixedEffects" rowspan="3">+ (5-10)% Increased Chance Of Blocking<br>
+                        Regenerate Mana (4-10)%<br>
+                        + (10-20) <n style="color:#33f;">To Mana</n>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="itemBase">Round Shield</td>
+                </tr>
+                <tr>
+                    <td class="itemBase">Luna</td>
+                </tr>
+                <!-- Body -->
+                <tr>
+                    <td rowspan="3" class="craftType">Caster Body<br>
+                    <td class="itemBase">Light Plate</td>
+                    <td rowspan="3">
+                        Tal Rune<br>
+                        Perfect Amethyst<br>
+                        Any Jewel
+                    </td>
+                    <td rowspan="3"><img class="raw" src="../img/diablo/caster/CasterBody.jpg" alt=""></td>
+                    <td class="FixedEffects" rowspan="3">+ (1-3) Mana Per Kill<br>
+                        Regenerate Mana (4-10)%<br>
+                        + (10-20) <n style="color:#33f;">To Mana</n>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="itemBase">Mage Plate</td>
+                </tr>
+                <tr>
+                    <td class="itemBase">Archon Plate</td>
+                </tr>
+                <!-- Amulet -->
+                <tr>
+                    <td class="craftType">Caster Amulet<br>
+                    <td class="itemBase">Amulet</td>
+                    <td>
+                        Ral Rune<br>
+                        Perfect Amethyst<br>
+                        Any Jewel
+                    </td>
+                    <td><img class="raw" src="../img/diablo/caster/CasterAmulet.jpg" alt=""></td>
+                    <td class="FixedEffects">(5-10)% <n style="color:#f33;">Faster Cast Rate</n><br>
+                        Regenerate Mana (4-10)%<br>
+                        + (10-20) <n style="color:#33f;">To Mana</n>
+                    </td>
+                </tr>
+                <!-- Ring -->
+                <tr>
+                    <td class="craftType">Caster Ring<br>
+                    <td class="itemBase">Ring</td>
+                    <td>
+                        Amn Rune<br>
+                        Perfect Amethyst<br>
+                        Any Jewel
+                    </td>
+                    <td><img class="raw" src="../img/diablo/caster/CasterRing.jpg" alt=""></td>
+                    <td class="FixedEffects">+ (1-5) To Energy<br>
+                        Regenerate Mana (4-10)%<br>
+                        + (10-20) <n style="color:#33f;">To Mana</n>
+                    </td>
+                </tr>
+                <!-- Weapon -->
+                <tr>
+                    <td rowspan="3" class="craftType">Caster Weapon<br>
+                    <td class="itemBase">Normal Rod**</td>
+                    <td rowspan="3">
+                        Tir Rune<br>
+                        Perfect Amethyst<br>
+                        Any Jewel
+                    </td>
+                    <td rowspan="3"><img class="raw" src="../img/diablo/caster/CasterWeapon.jpg" alt=""></td>
+                    <td class="FixedEffects" rowspan="3">Increase Maximum Mana (1-5)%<br>
+                        Regenerate Mana (4-10)%<br>
+                        + (10-20) <n style="color:#33f;">To Mana</n>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="itemBase">Exceptional Rod**</td>
+                </tr>
+                <tr>
+                    <td class="itemBase">Elite Rod**</td>
+                </tr>
+
+            </table>
+            <small>
+                &nbsp;**Note: Rods are Scepters, Wands, and Staves.<br>
+                &nbsp;출처: <a href="http://classic.battle.net/diablo2exp/items/crafted/caster.shtml">arreat summit</a>
+            </small>
+        </div>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
     </script>
-    <!-- open && close menu() end -->
-  </body>
+</body>
+
 </html>

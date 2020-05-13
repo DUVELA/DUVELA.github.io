@@ -1,61 +1,58 @@
 
 /* table start */
-table         { margin-left: 41px;}
-table, th, td { border: 1px solid black;
-                border-collapse: collapse;
-                padding: 5px;
-                text-align: left; }
-
-#crafting-main { margin-left: 160px; /* Same as the width of the sidenav */
-                 font-size: 16px; /* Increased text to enable scrolling */
-                 padding: 0px 10px;
-                 z-index: -1;
-                }         
+table, th, td  { border: 1.5px solid black;
+                 border-collapse: collapse;
+                 padding: 5px;
+                 text-align: left; }
+tr             { height: 55px;}       
 #crafting-main td, #crafting-main th {
-    border: 1px solid #ddd;
+    border: 1px solid gray;
 }
-td:nth-child(1) { width: 224px;           }
-td:nth-child(2) { width: 770px;           }
+td:nth-child(1) { width: 116px;           }
+td:nth-child(2) { width: 224px;           }
+td:nth-child(3) { width: 116px;           }
+td:nth-child(4) { width: 116px;           }
+
+
+td.craftType    { text-align: center;
+                  height: 165px;          }
+td.itemBase     { padding-left: 12px;
+                  height: 54px;
+                  color: blue;          }
+td.FixedEffects { width: 400px;           }
+
+td img.raw      { height: 153px;          }
 /* table end */
-/* sidebanner start */
-.sidebanner { width: 160px;
-              z-index: 0;
-              position: fixed;
-              margin-top: 57px;
-              top: 0;
-              left: 0;
-              background-color: #111;
-              /* height: 100%; */
-              overflow-x: hidden;
-              padding-top: 60px;         }
+/* side start */
+.sidenav        { height: 100%;
+                  width: 0;
+                  position: fixed;
+                  z-index: 1;
+                  top: 0;
+                  left: 0;
+                  background-color: #111;
+                  overflow-x: hidden;
+                  transition: 0.5s;
+                  padding-top: 60px;      }
 
-.sidebanner a { padding: 8px 8px 8px 6px;
-                text-decoration: none;
-                font-size: 18px;
-                color: #818181;
-                display: block;           }
+.sidenav a      { padding: 8px 8px 8px 32px;
+                  text-decoration: none;
+                  font-size: 25px;
+                  color: #818181;
+                  display: block;
+                  transition: 0.3s;         }
 
-.sidebanner a:hover { color: #f1f1f1;   }
-#asia         { max-width: 90%;
-                margin-left: 180px;       }
+.sidenav a:hover { color: #f1f1f1;        }
 
-#aboutRelative { max-width: 600px; margin-left: 180px;}
+.sidenav .closebtn { position: absolute;
+                     top: 0;
+                     right: 25px;
+                     font-size: 36px;
+                     margin-left: 50px;      }
 
-/* sidebanner end */
+/* @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+            } */
+/* side end */
 
-/* .side-menu start -style.css의 .side-menu. Game에서만 쓸 것 같아서 따로 빼놨다.*/
-.side-menu { display: none;  }
-/* .side-menu end */
-
-/* game- vertical start */
-.vertical {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-.centered-left {
-  position: absolute;
-  top: 65%;
-  left: 16px;
-}
-/* game- vertical end */

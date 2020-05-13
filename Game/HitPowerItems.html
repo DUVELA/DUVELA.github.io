@@ -1,266 +1,238 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+
+<head>
     <meta charset="utf-8">
-    <title>crafting_HitPowerItems</title>
+    <title>crafting_BloodItems</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/newStyle.css">
     <link rel="stylesheet" type="text/css" href="../css/games.css">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-  </head>
-  <body>
-    <div class="top-nav-bar">
-      <div class="search-box">
-        <i class="fa fa-bars" id="menu-btn" onclick="openmenu()" style="display: block;"></i>
-        <i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
-        <a href="../index.html"><img style="-webkit-user-select: none;" class="logo"
-            src="https://raw.githubusercontent.com/DUVELA/testNotepad/d6b902072397e82def74e7042dcd4a8ad4fb6760/html/img/%ED%81%AC%EA%B8%B0%20%EB%A7%9E%EC%B6%A4%EC%9A%A9.jpg"></a>
-        <input type="text" class="form-control" value="기능 없음. function is not here :D">
-        <span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
-      </div>
-      <div class="menu-bar">
-        <ul>
-          <li><a href="mailto:cky21525@gmail.com?Subject=Hello%20again%20from%20https://duvela.github.io/" target="_top"><i
-                class="fa fa-envelope" aria-hidden="true"></i> Email</a></li>
-          <li><a href="https://fontawesome.com/v4.7.0/icons/" target="_blank"><i class="fa fa-flag" aria-hidden="true"></i>
-              Icons</a>
-          </li>
-          <li><a href="https://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>
-              GitHub</a></li>
-        </ul>
-      </div>
-    </div>
-    
-    <!-- header section start -->
-    <section class="header">
-      <div class="side-menu" id="side-menu">
-        <ul>
-          <li>게임(Game)<i class="fa fa-angle-right"></i>
-            <ul>
-              <li><a href="../Game/D2.html">Diablo2</a></li>
-              <li>Path of Exile</li>
-              <li>Sub Menu-1</li>
-              <li>Sub Menu-1</li>
-            </ul>
-          </li>
-          <li>일상<br>(a record of ordinary days)<i class="fa fa-angle-right"></i>
-            <ul>
-              <li><a href="../record/basin_pop_up_plug.html">basin pop up</a></li>
-              <li><a href="../record/doorRoller.html">호차(戶車)</a></li>
-              <li><a href="../record/etc.html">etc</a></li>
-              <li>Sub Menu-1</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!-- header section end -->
-    <div class="sidebanner">
-        <a href="D2.html">about</a>
-        <a href="BloodItems.html">BloodItems</a>
-        <a href="CasterItems.html">CasterItems</a>
-        <a href="HitPowerItems.html"><u>HitPowerItems</u></a>
-        <a href="SafetyItems.html">SafetyItems</a>
-    </div>
-    <div id="crafting-main">
-      <table>
-        <tbody>
-          <tr>
-            <th>Crafted Item</th>
-            <th>Crafted Recipe</th>
-            <th>Crafted image</th>
-            <th>Fixed Effects</th>
-          </tr>
-          <tr>
-            <td align="center">HitPowerHelm</td>
-            <td align="center">Magic Full Helm/Basinet/Giant Conch <br>
-              Ith Rune <br>
-              Perfect Sapphire <br>
-              Any Jewel <br>
-            </td>
-            <td><img src="img/hitPower/HitPowerHelm.jpg" alt=""></td>
-            <td align="center">(25-50) Defense vs. Missiles <br>
-              5% Chance To Cast Level 4 Frost Nova When Struck <br>
-              Attacker Takes Damage of (3-7)
-            </td>
-          </tr>
-          <tr>
-            <td>HitPowerBoots</td>
-            <td>Magic Chain/Mesh/Boneweave Boots <br>
-              Ral Rune <br>
-              Perfect Sapphire <br>
-              Any Jewel <br>
-            </td>
-            <td><img src="img/hitPower/HitPowerBoots.jpg" alt=""></td>
-            <td>(25-50) Defense vs. Melee <br>
-              5% Chance To Cast Level 4 Frost Nova When Struck <br>
-              Attacker Takes Damage of (3-7)
-            </td>
-          </tr>
-          <tr>
-            <td>HitPowerGloves</td>
-            <td>Magic Chain Gloves/Heavy Bracers/Vambraces <br>
-              Ort Rune <br>
-              Perfect Sapphire <br>
-              Any Jewel
-            </td>
-            <td><img src="img/hitPower/HitPowerGloves.jpg" alt=""></td>
-            <td>Knockback <br>
-              5% Chance To Cast Level 4 Frost Nova When Struck <br>
-              Attacker Takes Damage of (3-7)
-            </td>
-          </tr>
-          <tr>
-            <td>HitPowerBelt</td>
-            <td>Magic Heavy Belt/Battle Belt/Troll Belt <br>
-              Tal Rune <br>
-              Perfect Sapphire <br>
-              Any Jewel
-            </td>
-            <td><img src="img/hitPower/HitPowerBelt.jpg" alt=""></td>
-            <td>(5-10) % Damage Goes to Mana <br>
-              5% Chance To Cast Level 4 Frost Nova When Struck <br>
-              Attacker Takes Damage of (3-7)
-            </td>
-          </tr>
-          <tr>
-            <td>HitPowerShield</td>
-            <td>Magic Gothic Shield/Ancient Shield/Ward <br>
-              Eth Rune <br>
-              Perfect Sapphire <br>
-              Any Jewel
-            </td>
-            <td><img src="img/hitPower/HitPowerShield.jpg" alt=""></td>
-            <td>(5-10%) Increased Chance of Blocking <br>
-              5% Chance To Cast Level 4 Frost Nova When Struck <br>
-              Attacker Takes Damage of (3-10) <br>
-            </td>
-          </tr>
-          <tr>
-            <td>HitPowerBody</td>
-            <td>Magic Field Plate/Sharktooth Armor/Kraken Shell <br>
-              Nef Rune <br>
-              Perfect Sapphire <br>
-              Any Jewel
-            </td>
-            <td><img src="img/hitPower/HitPowerBody.jpg" alt=""></td>
-            <td>10-20% Faster Hit Recovery <br>
-              5% Chance To Cast Level 4 Frost Nova When Struck <br>
-              Attacker Takes Damage of (3-10)
-            </td>
-          </tr>
-          <tr>
-            <td>HitPowerAmulet</td>
-            <td>Magic Amulet <br>
-              Thul Rune <br>
-              Perfect Sapphire <br>
-              Any Jewel
-            </td>
-            <td><img src="img/hitPower/HitPowerAmulet.jpg" alt=""></td>
-            <td>Hit Causes Monster To Flee (3-11)% <br>
-              5% Chance To Cast Level 4 Frost Nova When Struck <br>
-              Attacker Takes Damage of (3-10)
-            </td>
-          </tr>
-          <tr>
-            <td>HitPowerRing</td>
-            <td>Magic Ring <br>
-              Amn Rune <br>
-              Perfect Sapphire <br>
-              Any Jewel
-            </td>
-            <td><img src="img/hitPower/HitPowerRing.jpg" alt=""></td>
-            <td>+ (1-5) To Dexterity <br>
-              5% Chance To Cast Level 4 Frost Nova When Struck <br>
-              Attacker Takes Damage of (3-6) <br>
-            </td>
-          </tr>
-          <tr>
-            <td>HitPowerWeapon</td>
-            <td>Magic Normal/Exceptional/Elite Blunt Weapon** <br>
-              Tir Rune <br>
-              Perfect Sapphire <br>
-              Any Jewel
-            </td>
-            <td><img src="img/hitPower/HitPowerWeapon.jpg" alt=""></td>
-            <td>+ (35-60%) Enhanced Damage <br>
-              5% Chance To Cast Level 4 Frost Nova When Struck <br>
-              Attacker Takes Damage of (3-7)
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <p><strong>Note</strong>: Blunt Weapons are Clubs, Hammers, Maces, Scepters, Staves and Wands.<br>
-       Hammers are War Hammer, Maul, Great Maul. <br>
-       Clubs are Club and Spiked Club. Maces are Mace, Flail, and Morning Star.</p>
-      <small>
-        출처: <a href="http://classic.battle.net/diablo2exp/items/crafted/caster.shtml">arreat summit</a>
-      </small>
-    </div>
-    <!-- Footer start -->
-    <section class="footer">
-      <div class="container tex-center">
-        <div class="row">
-          <div class="col-md-3">
-            <h1>Useful Links</h1>
-            <p><a href="https://www.weather.go.kr/w/index.do" target="_blank"><i class="fa fa-cloud" aria-hidden="true">
-                  Weather-Kor</i></a></p>
-            <p><a href="https://www.korean.go.kr/front/main.do" target="_blank">&nbsp;<i class="fa fa-exclamation"
-                  aria-hidden="true">&nbsp;&nbsp;국립국어원</i></a></p>
-            <p><a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true">
-                  stackoverflow</i></a></p>
-            <p><a href="https://translate.google.com/" target="_blank"><i style="color: springgreen;" class="fa fa-globe"
-                  aria-hidden="true"></i>translate.google</a></p>
-          </div>
-          <div class="col-md-3">
-            <h1>Company</h1>
-            <p>About Us - None</p>
-            <p>Contact Us - None</p>
-            <p>Career - None</p>
-            <p>Affiliate - None</p>
-          </div>
-          <div class="col-md-3">
-            <h1>Sometime</h1>
-            <p><a href="https://www.youtube.com/" target="_blank"><i style="color: red;"
-                  class="fa fa-youtube-play"></i>YouTube</a></p>
-            <p><a href="https://www.twitch.tv" target="_blank"><i style="color: slateblue;"
-                  class="fa fa-twitch"></i>Twitch</a></p>
-            <p><a href="https://slack.com" target="_blank"><i class="fa fa-slack"></i> Slack</a>
-            </p>
-            <p><a href="https://www.linkedin.com/" target="_blank"><i style="color: skyblue;" class="fa fa-linkedin-square"
-                  aria-hidden="true"></i> Linkedin</a></p>
-          </div>
-          <div class="col-md-3 footer-image">
-            <h1>Download</h1>
-            <p><a href="https://git-scm.com/book/ko/v2" target="_blank"><i class="fa fa-code-fork" aria-hidden="true">
-                  git</i></a></p>
-            <p><a href="https://code.visualstudio.com/" target="_blank"><i class="fa fa-globe-o" aria-hidden="true">
-                  VSCode</i></a></p>
-            <p><a href="https://scala-lang.org/" target="_blank"><i class="fa fa-globe-o" aria-hidden="true">
-                  Scala</i></a></p>
-            <p><a href="https://openjdk.java.net/" target="_blank"><i class="fa fa-globe-o"
-                  aria-hidden="true">OpenJDK</i></a></p>
-          </div>
-        </div>
-        <hr>
-        <p class="copyright">Made with <i class="fa fa-heart-o"></i> by Duvela</p>
-      </div>
-    </section>
-    <!-- Footer end -->
-        <!-- open && close menu() start -->
-        <script>
-          function openmenu() {
-            document.getElementById("side-menu").style.display = "block"
-            document.getElementById("menu-btn").style.display = "none"
-            document.getElementById("close-btn").style.display = "block"
-          }
+    <!-- <link rel="stylesheet" type="text/css" href="../css/style.css"> -->
+    <style>
 
-          function closemenu() {
-            document.getElementById("side-menu").style.display = "none"
-            document.getElementById("menu-btn").style.display = "block"
-            document.getElementById("close-btn").style.display = "none"
-          }
-        </script>
-        <!-- open && close menu() end -->
-  </body>
+    </style>
+</head>
+
+<body>
+    <div class="headWrap">
+        <div id="mySidenav" class="sidenav" onclick="closeNav()">
+            <a href="D2.html">about</a>
+            <a href="BloodItems.html">BloodItems</a>
+            <a href="CasterItems.html">CasterItems</a>
+            <a href="HitPowerItems.html"><u>HitPowerItems</u></a>
+            <a href="SafetyItems.html">SafetyItems</a>
+        </div>
+        <h2>Animated Sidenav Example</h2>
+        <p>Click on the element below to open the side navigation menu.</p>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+    </div>
+    <div class="mainWrap">
+        <div id="crafting-main">
+            <table class="myTable" style="background-color: #eee6c4;">
+                <!-- Helm -->
+                <tr>
+                    <td rowspan="3" class="craftType">Hit Power Helm<br>
+                    <td class="itemBase">Full Helm</td>
+                    <td rowspan="3">
+                        Ith Rune<br>
+                        Perfect Sapphire<br>
+                        Any Jewel
+                    </td>
+                    <td rowspan="3"><img class="raw" src="../img/diablo/hitPower/HitPowerHelm.jpg" alt=""></td>
+                    <td class="FixedEffects" rowspan="3">(25-50) Defense vs. Missiles <br>
+                        5% Chance To Cast Level 4 Frost Nova When Struck <br>
+                        Attacker Takes Damage of (3-7)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="itemBase">Basinet</td>
+                </tr>
+                <tr>
+                    <td class="itemBase">Giant Conch</td>
+                </tr>
+                <!-- Boots -->
+                <tr>
+                    <td rowspan="3" class="craftType">Hit Power Boots<br>
+                    <td class="itemBase">Chain Boots</td>
+                    <td rowspan="3">
+                        Ral Rune <br>
+                        Perfect Sapphire <br>
+                        Any Jewel
+                    </td>
+                    <td rowspan="3"><img class="raw" src="../img/diablo/hitPower/HitPowerBoots.jpg" alt=""></td>
+                    <td class="FixedEffects" rowspan="3">
+                        (25-50) Defense vs. Melee <br>
+                        5% Chance To Cast Level 4 Frost Nova When Struck <br>
+                        Attacker Takes Damage of (3-7)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="itemBase">Mesh Boots</td>
+                </tr>
+                <tr>
+                    <td class="itemBase">Boneweave Boots</td>
+                </tr>
+                <!-- Gloves -->
+                <tr>
+                    <td rowspan="3" class="craftType">Hit Power Gloves<br>
+                    <td class="itemBase">Magic Chain Gloves</td>
+                    <td rowspan="3">
+                        Ral Rune <br>
+                        Perfect Sapphire <br>
+                        Any Jewel
+                    </td>
+                    <td rowspan="3"><img class="raw" src="img/../img/diablo/hitPower/HitPowerBoots.jpg" alt=""></td>
+                    <td class="FixedEffects" rowspan="3">
+                        (25-50) Defense vs. Melee <br>
+                        5% Chance To Cast Level 4 Frost Nova When Struck <br>
+                        Attacker Takes Damage of (3-7)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="itemBase">Heavy Bracers</td>
+                </tr>
+                <tr>
+                    <td class="itemBase">Vambraces</td>
+                </tr>
+                <!-- Belt -->
+                <tr>
+                    <td rowspan="3" class="craftType">Hit Power Belt<br>
+                    <td class="itemBase">Heavy Belt</td>
+                    <td rowspan="3">
+                        Tal Rune <br>
+                        Perfect Sapphire <br>
+                        Any Jewel
+                    </td>
+                    <td rowspan="3"><img class="raw" src="../img/diablo/hitPower/HitPowerBelt.jpg" alt=""></td>
+                    <td class="FixedEffects" rowspan="3">
+                        (5-10) % Damage Goes to Mana <br>
+                        5% Chance To Cast Level 4 Frost Nova When Struck <br>
+                        Attacker Takes Damage of (3-7)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="itemBase">Battle Belt</td>
+                </tr>
+                <tr>
+                    <td class="itemBase">Troll Belt</td>
+                </tr>
+                <!-- Shield -->
+                <tr>
+                    <td rowspan="3" class="craftType">Hit Power Shield<br>
+                    <td class="itemBase">Gothic Shield</td>
+                    <td rowspan="3">
+                        Eth Rune <br>
+                        Perfect Sapphire <br>
+                        Any Jewel
+                    </td>
+                    <td rowspan="3"><img class="raw" src="../img/diablo/hitPower/HitPowerShield.jpg" alt=""></td>
+                    <td class="FixedEffects" rowspan="3">
+                        (5-10%) Increased Chance of Blocking <br>
+                        5% Chance To Cast Level 4 Frost Nova When Struck <br>
+                        Attacker Takes Damage of (3-10)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="itemBase">Ancient Shield</td>
+                </tr>
+                <tr>
+                    <td class="itemBase">Ward</td>
+                </tr>
+                <!-- Body -->
+                <tr>
+                    <td rowspan="3" class="craftType">Hit Power Body<br>
+                    <td class="itemBase">Field Plate</td>
+                    <td rowspan="3">
+                        Nef Rune <br>
+                        Perfect Sapphire <br>
+                        Any Jewel
+                    </td>
+                    <td rowspan="3"><img class="raw" src="../img/diablo/hitPower/HitPowerBody.jpg" alt=""></td>
+                    <td class="FixedEffects" rowspan="3">
+                        10-20% Faster Hit Recovery <br>
+                        5% Chance To Cast Level 4 Frost Nova When Struck <br>
+                        Attacker Takes Damage of (3-10)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="itemBase">Sharktooth Armor</td>
+                </tr>
+                <tr>
+                    <td class="itemBase">Kraken Shell</td>
+                </tr>
+                <!-- Amulet -->
+                <tr>
+                    <td class="craftType">Hit Power Amulet<br>
+                    <td class="itemBase">Amulet</td>
+                    <td>
+                        Thul Rune <br>
+                        Perfect Sapphire <br>
+                        Any Jewel
+                    </td>
+                    <td><img class="raw" src="../img/diablo/hitPower/HitPowerAmulet.jpg" alt=""></td>
+                    <td class="FixedEffects">
+                        Hit Causes Monster To Flee (3-11)% <br>
+                        5% Chance To Cast Level 4 Frost Nova When Struck <br>
+                        Attacker Takes Damage of (3-10)
+                    </td>
+                </tr>
+                <!-- Ring -->
+                <tr>
+                    <td class="craftType">Hit Power Ring<br>
+                    <td class="itemBase">Ring</td>
+                    <td>
+                        Amn Rune <br>
+                        Perfect Sapphire <br>
+                        Any Jewel
+                    </td>
+                    <td><img class="raw" src="../img/diablo/hitPower/HitPowerRing.jpg" alt=""></td>
+                    <td class="FixedEffects">
+                        + (1-5) To Dexterity <br>
+                        5% Chance To Cast Level 4 Frost Nova When Struck <br>
+                        Attacker Takes Damage of (3-6)
+                    </td>
+                </tr>
+                <!-- Weapon -->
+                <tr>
+                    <td rowspan="3" class="craftType">Hit Power Weapon<br>
+                    <td class="itemBase">Normal Blunt Weapon**</td>
+                    <td rowspan="3">
+                        Tir Rune <br>
+                        Perfect Sapphire <br>
+                        Any Jewel
+                    </td>
+                    <td rowspan="3"><img class="raw" src="../img/diablo/hitPower/HitPowerWeapon.jpg" alt=""></td>
+                    <td class="FixedEffects" rowspan="3">
+                        + (35-60%) Enhanced Damage <br>
+                        5% Chance To Cast Level 4 Frost Nova When Struck <br>
+                        Attacker Takes Damage of (3-7)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="itemBase">Exceptional Blunt Weapon**</td>
+                </tr>
+                <tr>
+                    <td class="itemBase">Elite Blunt Weapon**</td>
+                </tr>
+
+            </table>
+            <small class="note">
+                &nbsp;<strong>Note</strong>: Blunt Weapons are Clubs, Hammers, Maces, Scepters, Staves and Wands. Hammers are War Hammer, Maul, Great Maul. Clubs are Club and Spiked Club. Maces are Mace, Flail, and Morning Star.<br>
+                &nbsp;출처: <a href="http://classic.battle.net/diablo2exp/items/crafted/caster.shtml">arreat summit</a>
+            </small>
+        </div>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+
 </html>

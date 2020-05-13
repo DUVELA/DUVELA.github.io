@@ -1,270 +1,245 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+
+<head>
     <meta charset="utf-8">
-    <title>crafting_SafetyItems</title>
+    <title>crafting_BloodItems</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/newStyle.css">
     <link rel="stylesheet" type="text/css" href="../css/games.css">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-  </head>
-  <body>
-    <div class="top-nav-bar">
-      <div class="search-box">
-        <i class="fa fa-bars" id="menu-btn" onclick="openmenu()" style="display: block;"></i>
-        <i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
-        <a href="../index.html"><img style="-webkit-user-select: none;" class="logo"
-            src="https://raw.githubusercontent.com/DUVELA/testNotepad/d6b902072397e82def74e7042dcd4a8ad4fb6760/html/img/%ED%81%AC%EA%B8%B0%20%EB%A7%9E%EC%B6%A4%EC%9A%A9.jpg"></a>
-        <input type="text" class="form-control" value="기능 없음. function is not here :D">
-        <span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
-      </div>
-      <div class="menu-bar">
-        <ul>
-          <li><a href="mailto:cky21525@gmail.com?Subject=Hello%20again%20from%20https://duvela.github.io/" target="_top"><i
-                class="fa fa-envelope" aria-hidden="true"></i> Email</a></li>
-          <li><a href="https://fontawesome.com/v4.7.0/icons/" target="_blank"><i class="fa fa-flag" aria-hidden="true"></i>
-              Icons</a>
-          </li>
-          <li><a href="https://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>
-              GitHub</a></li>
-        </ul>
-      </div>
-    </div>
-    
-    <!-- header section start -->
-    <section class="header">
-      <div class="side-menu" id="side-menu">
-        <ul>
-          <li>게임(Game)<i class="fa fa-angle-right"></i>
-            <ul>
-              <li><a href="../Game/D2.html">Diablo2</a></li>
-              <li>Path of Exile</li>
-              <li>Sub Menu-1</li>
-              <li>Sub Menu-1</li>
-            </ul>
-          </li>
-          <li>일상<br>(a record of ordinary days)<i class="fa fa-angle-right"></i>
-            <ul>
-              <li><a href="../record/basin_pop_up_plug.html">basin pop up</a></li>
-              <li><a href="../record/doorRoller.html">호차(戶車)</a></li>
-              <li><a href="../record/etc.html">etc</a></li>
-              <li>Sub Menu-1</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!-- header section end -->
-    <div class="sidebanner">
-        <a href="D2.html">about</a>
-        <a href="BloodItems.html">BloodItems</a>
-        <a href="CasterItems.html">CasterItems</a>
-        <a href="HitPowerItems.html">HitPowerItems</a>
-        <a href="SafetyItems.html"><u>SafetyItems</u></a>
-    </div>
-    <div id="crafting-main">
-      <table>
-        <tbody>
-          <tr>
-            <th>Crafted Item</th>
-            <th>Crafted Recipe</th>
-            <th>Crafted image</th>
-            <th>Fixed Effects</th>
-          </tr>
-          <tr>
-            <td>Safety Helm</td>
-            <td>Magic Crown/Grand Crown/Corona<br>
-              Ith Rune<br>
-              Perfect Emerald<br>
-              Any Jewel
-            </td>
-            <td><img src="img/safety/SafetyHelm.jpg" alt=""></td>
-            <td>+ (10-30)% Enhanced Defense<br>
-              Lightning Resist + (5-10)%<br>
-              Magic Damage Reduced By (1-2)<br>
-              Damage Reduced By (1-4)
-            </td>
-          </tr>
-          <tr>
-            <td>Safety Boots</td>
-            <td>Magic Greaves/War Boots/Myrmidon Boots<br>
-              Ort Rune<br>
-              Perfect Emerald<br>
-              Any Jewel
-            </td>
-            <td><img src="img/safety/SafetyBoots.jpg" alt=""></td>
-            <td>+ (10-30)% Enhanced Defense<br>
-              Fire Resist + (5-10)%<br>
-              Magic Damage Reduced By (1-2)<br>
-              Damage Reduced By (1-4)
-            </td>
-          </tr>
-          <tr>
-            <td>Safety Gloves</td>
-            <td>Magic Gauntlets/War Gauntlets/Ogre Gauntlets<br>
-              Ral Rune<br>
-              Perfect Emerald<br>
-              Any Jewel
-            </td>
-            <td><img style="-webkit-user-select: none;margin: auto;"
-              src="https://raw.githubusercontent.com/DUVELA/game/master/diablo2/img/Safety%20Gloves.jpg"></td>
-            <td>+ (10-30)% Enhanced Defense<br>
-              Cold Resist + (5-10)%<br>
-              Magic Damage Reduced By (1-2)<br>
-              Damage Reduced By (1-4)
-            </td>
-          </tr>
-          <tr>
-            <td>Safety Belt</td>
-            <td>Magic Sash/Demonhide Sash/Spiderweb Sash<br>
-              Tal Rune<br>
-              Perfect Emerald<br>
-              Any Jewel
-            </td>
-            <td><img style="-webkit-user-select: none;margin: auto;"
-              src="https://raw.githubusercontent.com/DUVELA/game/master/diablo2/img/Safety%20Belt.jpg"></td>
-            <td>+ (10-30)% Enhanced Defense<br>
-              Poison Resist +(5-10)%<br>
-              Magic Damage Reduced By (1-2)<br>
-              Damage Reduced By (1-4)
-            </td>
-          </tr>
-          <tr>
-            <td>Safety Shield</td>
-            <td>Magic Kite Shield/Dragon Shield/Monarch<br>
-              Nef Rune<br>
-              Perfect Emerald<br>
-              Any Jewel
-            </td>
-            <td><img src="img/safety/SafetyShield.jpg" alt=""></td>
-            <td>+ (10-30)% Enhanced Defense<br>
-              Magic Resistance +(5-10)%<br>
-              Magic Damage Reduced By (1-2)<br>
-              Damage Reduced By (1-4)
-            </td>
-          </tr>
-          <tr>
-            <td>Safety Body</td>
-            <td>Magic Breast Plate/Cuirass/Great Hauberk<br>
-              Eth Rune<br>
-              Perfect Emerald<br>
-              Any Jewel
-            </td>
-            <td><img src="img/safety/SafetyBody.jpg" alt=""></td>
-            <td>+ (10-30)% Enhanced Defense<br>
-              Half Freeze Duration<br>
-              Magic Damage Reduced By (1-2)<br>
-              Damage Reduced By (1-4)
-            </td>
-          </tr>
-          <tr>
-            <td>Safety Amulet</td>
-            <td>Magic Amulet<br>
-              Thul Rune<br>
-              Perfect Emerald<br>
-              Any Jewel
-            </td>
-            <td><img src="img/safety/SafetyAmulet.jpg" alt=""></td>
-            <td>+ (1-10)% Increased Chance Of Blocking<br>
-              Magic Damage Reduced By (1-2)<br>
-              Damage Reduced By (1-4)
-            </td>
-          </tr><tr>
-            <td>Safety Ring</td>
-            <td>Magic Ring<br>
-              Amn Rune<br>
-              Perfect Emerald<br>
-              Any Jewel
-            </td>
-            <td><img src="img/safety/SafetyRing.jpg" alt=""></td>
-            <td>+ (1-5) To Vitality<br>
-              Magic Damage Reduced By (1-2)<br>
-              Damage Reduced By (1-4)
-            </td>
-          </tr>
-          <tr>
-            <td>Safety Weapon</td>
-            <td>Magic Normal/Exceptional/Elite Spear or Javelin<br>
-              Sol Rune<br>
-              Perfect Emerald<br>
-              Any Jewel
-            </td>
-            <td><img src="img/safety/SafetyWeapon.jpg" alt=""></td>
-            <td>+ (5-10%) Enhanced Defense<br>
-              Magic Damage Reduced By (1-2)<br>
-              Damage Reduced By (1-4)
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <small>
-        출처: <a href="http://classic.battle.net/diablo2exp/items/crafted/caster.shtml">arreat summit</a>
-      </small>
-    </div>
-    <!-- Footer start -->
-    <section class="footer">
-        <div class="container tex-center">
-            <div class="row">
-                <div class="col-md-3">
-                    <h1>Useful Links</h1>
-                    <p><a href="https://www.weather.go.kr/w/index.do" target="_blank"><i class="fa fa-cloud"
-                                aria-hidden="true"> Weather-Kor</i></a></p>
-                    <p><a href="https://www.korean.go.kr/front/main.do" target="_blank">&nbsp;<i class="fa fa-exclamation"
-                                aria-hidden="true">&nbsp;&nbsp;국립국어원</i></a></p>
-                    <p><a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow"
-                                aria-hidden="true"> stackoverflow</i></a></p>
-                    <p><a href="https://translate.google.com/" target="_blank"><i style="color: springgreen;"
-                                class="fa fa-globe" aria-hidden="true"></i>translate.google</a></p>
-                </div>
-                <div class="col-md-3">
-                    <h1>Company</h1>
-                    <p>About Us - None</p>
-                    <p>Contact Us - None</p>
-                    <p>Career - None</p>
-                    <p>Affiliate - None</p>
-                </div>
-                <div class="col-md-3">
-                    <h1>Sometime</h1>
-                    <p><a href="https://www.youtube.com/" target="_blank"><i style="color: red;"
-                                class="fa fa-youtube-play"></i>YouTube</a></p>
-                    <p><a href="https://www.twitch.tv" target="_blank"><i style="color: slateblue;"
-                                class="fa fa-twitch"></i>Twitch</a></p>
-                    <p><a href="https://slack.com" target="_blank"><i class="fa fa-slack"></i> Slack</a>
-                    </p>
-                    <p><a href="https://www.linkedin.com/" target="_blank"><i style="color: skyblue;"
-                                class="fa fa-linkedin-square" aria-hidden="true"></i> Linkedin</a></p>
-                </div>
-                <div class="col-md-3 footer-image">
-                    <h1>Download</h1>
-                    <p><a href="https://git-scm.com/book/ko/v2" target="_blank"><i class="fa fa-code-fork"
-                                aria-hidden="true"> git</i></a></p>
-                    <p><a href="https://code.visualstudio.com/" target="_blank"><i class="fa fa-globe-o" aria-hidden="true">
-                                VSCode</i></a></p>
-                    <p><a href="https://scala-lang.org/" target="_blank"><i class="fa fa-globe-o" aria-hidden="true">
-                                Scala</i></a></p>
-                    <p><a href="https://openjdk.java.net/" target="_blank"><i class="fa fa-globe-o"
-                                aria-hidden="true">OpenJDK</i></a></p>
-                </div>
-            </div>
-            <hr>
-            <p class="copyright">Made with <i class="fa fa-heart-o"></i> by Duvela</p>
-        </div>
-    </section>
-    <!-- Footer end -->
-    <!-- open && close menu() start -->
-    <script>
-      function openmenu() {
-        document.getElementById("side-menu").style.display = "block"
-        document.getElementById("menu-btn").style.display = "none"
-        document.getElementById("close-btn").style.display = "block"
-      }
+    <!-- <link rel="stylesheet" type="text/css" href="../css/style.css"> -->
+    <style>
 
-      function closemenu() {
-        document.getElementById("side-menu").style.display = "none"
-        document.getElementById("menu-btn").style.display = "block"
-        document.getElementById("close-btn").style.display = "none"
-      }
+    </style>
+</head>
+
+<body>
+    <div class="headWrap">
+        <div id="mySidenav" class="sidenav" onclick="closeNav()">
+            <a href="D2.html">about</a>
+            <a href="BloodItems.html">BloodItems</a>
+            <a href="CasterItems.html">CasterItems</a>
+            <a href="HitPowerItems.html">HitPowerItems</a>
+            <a href="SafetyItems.html"><u>SafetyItems</u></a>
+        </div>
+        <h2>Animated Sidenav Example</h2>
+        <p>Click on the element below to open the side navigation menu.</p>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+    </div>
+    <div class="mainWrap">
+        <div id="crafting-main">
+            <table class="myTable" style="background-color: #eee6c4;">
+                <!-- Helm -->
+                <tr>
+                    <td rowspan="3" class="craftType">Safety Helm<br>
+                    <td class="itemBase">Crown/</td>
+                    <td rowspan="3">
+                        Ith Rune<br>
+                        Perfect Emerald<br>
+                        Any Jewel
+                    </td>
+                    <td rowspan="3"><img class="raw" src="../img/diablo/safety/SafetyHelm.jpg" alt=""></td>
+                    <td class="FixedEffects" rowspan="3">
+                        + (10-30)% Enhanced Defense<br>
+                        Lightning Resist + (5-10)%<br>
+                        Magic Damage Reduced By (1-2)<br>
+                        Damage Reduced By (1-4)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="itemBase">Grand Crown/</td>
+                </tr>
+                <tr>
+                    <td class="itemBase">Corona</td>
+                </tr>
+                <!-- Boots -->
+                <tr>
+                    <td rowspan="3" class="craftType">Safety Boots<br>
+                    <td class="itemBase">Greaves/</td>
+                    <td rowspan="3">
+                        Ort Rune<br>
+                        Perfect Emerald<br>
+                        Any Jewel
+                    </td>
+                    <td rowspan="3"><img class="raw" src="../img/diablo/safety/SafetyBoots.jpg" alt=""></td>
+                    <td class="FixedEffects" rowspan="3">
+                        + (10-30)% Enhanced Defense<br>
+                        Fire Resist + (5-10)%<br>
+                        Magic Damage Reduced By (1-2)<br>
+                        Damage Reduced By (1-4)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="itemBase">War Boots/</td>
+                </tr>
+                <tr>
+                    <td class="itemBase">Myrmidon Boots</td>
+                </tr>
+                <!-- Gloves -->
+                <tr>
+                    <td rowspan="3" class="craftType">Safety Gloves<br>
+                    <td class="itemBase">Gauntlets/</td>
+                    <td rowspan="3">
+                        Ral Rune<br>
+                        Perfect Emerald<br>
+                        Any Jewel
+                    </td>
+                    <td rowspan="3"><img class="raw" src="../img/diablo/safety/SafetyGloves.jpg" alt=""></td>
+                    <td class="FixedEffects" rowspan="3">
+                        + (10-30)% Enhanced Defense<br>
+                        Cold Resist + (5-10)%<br>
+                        Magic Damage Reduced By (1-2)<br>
+                        Damage Reduced By (1-4)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="itemBase">War Gauntlets/</td>
+                </tr>
+                <tr>
+                    <td class="itemBase">Ogre Gauntlets</td>
+                </tr>
+                <!-- Belt -->
+                <tr>
+                    <td rowspan="3" class="craftType">Safety Belt<br>
+                    <td class="itemBase">Sash/</td>
+                    <td rowspan="3">
+                        Tal Rune<br>
+                        Perfect Emerald<br>
+                        Any Jewel
+                    </td>
+                    <td rowspan="3"><img class="raw" src="../img/diablo/safety/SafetyBelt.jpg" alt=""></td>
+                    <td class="FixedEffects" rowspan="3">
+                        + (10-30)% Enhanced Defense<br>
+                        Poison Resist +(5-10)%<br>
+                        Magic Damage Reduced By (1-2)<br>
+                        Damage Reduced By (1-4)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="itemBase">Demonhide Sash/</td>
+                </tr>
+                <tr>
+                    <td class="itemBase">Spiderweb Sash</td>
+                </tr>
+                <!-- Shield -->
+                <tr>
+                    <td rowspan="3" class="craftType">Safety Shield<br>
+                    <td class="itemBase">Kite Shield/</td>
+                    <td rowspan="3">
+                        Nef Rune<br>
+                        Perfect Emerald<br>
+                        Any Jewel
+                    </td>
+                    <td rowspan="3"><img class="raw" src="../img/diablo/safety/SafetyShield.jpg" alt=""></td>
+                    <td class="FixedEffects" rowspan="3">
+                        + (10-30)% Enhanced Defense<br>
+                        Magic Resistance +(5-10)%<br>
+                        Magic Damage Reduced By (1-2)<br>
+                        Damage Reduced By (1-4)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="itemBase">Dragon Shield/</td>
+                </tr>
+                <tr>
+                    <td class="itemBase">Monarch</td>
+                </tr>
+                <!-- Body -->
+                <tr>
+                    <td rowspan="3" class="craftType">Safety Body<br>
+                    <td class="itemBase">Breast Plate/</td>
+                    <td rowspan="3">
+                        Eth Rune<br>
+                        Perfect Emerald<br>
+                        Any Jewel
+                    </td>
+                    <td rowspan="3"><img class="raw" src="../img/diablo/safety/SafetyBody.jpg" alt=""></td>
+                    <td class="FixedEffects" rowspan="3">
+                        + (10-30)% Enhanced Defense<br>
+                        Half Freeze Duration<br>
+                        Magic Damage Reduced By (1-2)<br>
+                        Damage Reduced By (1-4)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="itemBase">Cuirass/</td>
+                </tr>
+                <tr>
+                    <td class="itemBase">Great Hauberk</td>
+                </tr>
+                <!-- Amulet -->
+                <tr>
+                    <td class="craftType">Safety Amulet<br>
+                    <td class="itemBase">Amulet</td>
+                    <td>
+                        Thul Rune<br>
+                        Perfect Emerald<br>
+                        Any Jewel
+                    </td>
+                    <td><img class="raw" src="../img/diablo/safety/SafetyAmulet.jpg" alt=""></td>
+                    <td class="FixedEffects">
+                        + (1-10)% Increased Chance Of Blocking<br>
+                        Magic Damage Reduced By (1-2)<br>
+                        Damage Reduced By (1-4)
+                    </td>
+                </tr>
+                <!-- Ring -->
+                <tr>
+                    <td class="craftType">Safety Ring<br>
+                    <td class="itemBase">Ring</td>
+                    <td>
+                        Amn Rune<br>
+                        Perfect Emerald<br>
+                        Any Jewel
+                    </td>
+                    <td><img class="raw" src="../img/diablo/safety/SafetyRing.jpg" alt=""></td>
+                    <td class="FixedEffects">
+                        + (1-5) To Vitality<br>
+                        Magic Damage Reduced By (1-2)<br>
+                        Damage Reduced By (1-4)
+                    </td>
+                </tr>
+                <!-- Weapon -->
+                <tr>
+                    <td rowspan="3" class="craftType">Safety Weapon<br>
+                    <td class="itemBase">Normal Spear or Javelin</td>
+                    <td rowspan="3">
+                        Sol Rune<br>
+                        Perfect Emerald<br>
+                        Any Jewel
+                    </td>
+                    <td rowspan="3"><img class="raw" src="../img/diablo/safety/SafetyWeapon.jpg" alt=""></td>
+                    <td class="FixedEffects" rowspan="3">
+                        + (5-10%) Enhanced Defense<br>
+                        Magic Damage Reduced By (1-2)<br>
+                        Damage Reduced By (1-4)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="itemBase">Exceptional Spear or Javelin</td>
+                </tr>
+                <tr>
+                    <td class="itemBase">Elite Spear or Javelin</td>
+                </tr>
+
+            </table>
+            <small class="note">
+                &nbsp;출처: <a href="http://classic.battle.net/diablo2exp/items/crafted/caster.shtml">arreat summit</a>
+            </small>
+        </div>
+    </div>
+
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
     </script>
-    <!-- open && close menu() end -->
-  </body>
+</body>
+
 </html>

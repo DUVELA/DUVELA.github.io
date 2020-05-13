@@ -1,0 +1,10 @@
+*              { margin: 0;
+                 padding: 0;                  }
+body           { background-image: url("https://raw.githubusercontent.com/DUVELA/testNotepad/master/html/img/needpix_com_edited_image.png");
+                 font-family: sans-serif;     }
+
+.headWrap      { height: 207px;               }
+.mainWrap      { overflow-x: auto;
+                 margin-left: 277px; /* Same as the width of the sidenav */
+                 font-size: 16px; /* Increased text to enable scrolling */
+                 z-index: -1;                 }  
