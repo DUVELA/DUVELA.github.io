@@ -1,5 +1,6 @@
 *              { margin: 0;
                  padding: 0;                  }
+html           { scroll-behavior: smooth;     }
 body           { background-image: url("https://raw.githubusercontent.com/DUVELA/testNotepad/master/html/img/needpix_com_edited_image.png");
                  font-family: sans-serif;     }
 
@@ -8,3 +9,20 @@ body           { background-image: url("https://raw.githubusercontent.com/DUVELA
                  margin-left: 277px; /* Same as the width of the sidenav */
                  font-size: 16px; /* Increased text to enable scrolling */
                  z-index: -1;                 }  
+/* .social-icons start */
+.social-icons         { right: 14px;
+                        bottom: 14px;
+                        color: #000;
+                        font-size:12px;
+                        position:fixed;          }
+.social-icons ul li   { list-style: none;
+                        width: 30px;
+                        margin-top: 15px;
+                        text-align: center;      }
+.social-icons ul li a { color: yellow;
+                        background-image: linear-gradient(#999, #000000), radial-gradient(circle at top left, #af8dab, #19d7f8);
+                        border-radius: 50%;
+                        border: 1px solid blue;
+                        padding: 5px;
+                        display: block;          }
+/* .social-icons end */
