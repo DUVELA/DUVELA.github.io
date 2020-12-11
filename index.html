@@ -11,13 +11,22 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
 </head>
 <body>
+    <div style="float: left; margin-right: 50px;">
     Hello World<a href="main.html">&#128014;main</a><br>
     이건 터미널에서<a href="record/basin_pop_up_plug.html">&#128014;</a><br>
     디아2 수정중.<a href="Game/D2.html">&#128014;</a><br>
+    </div>
+    
+    <!-- 시간 start -->
+    <body onload="myFunctionKST()">
+        <div style="border:double #dedede; width:300px; height:100px; line-height:50px; color:white; font-size:50px; text-align:center; float:  left;" id="kst">
+        </div>
+
+    <!-- 시간 end -->
     <!-- 유튜브 start -->
 
     <p>
-        <div style="max-width: 600px; margin-bottom: 60px;" >
+        <div style="max-width: 600px; margin-bottom: 60px; clear:both;" >
             아래 주소를 보면서 드디어 만들었습니다.&#127882;<br>
             <a href="https://pages.github.com/">pages.github.com</a>
             <div class="relative">
@@ -52,5 +61,33 @@
         </div>
     </p>
     <!-- 트위치 end -->
+    <!-- 시간 start -->
+
+<script>
+    function myFunctionKST() {
+            var cTime = document.getElementById("kst");
+            var d = new Date();
+            var h = position(d.getHours());
+            var m = position(d.getMinutes());
+            var s = position(d.getSeconds());
+            var calendar = d.getFullYear() + "." + (d.getMonth() + 1) + "." + d.getDate()
+
+            if (h > 23) return cTime.innerHTML = calendar + "<br>" + "<span>KST</span>" +  (h-24) + ":" + m + ":" + s;
+            if (h < 0) return  cTime.innerHTML = calendar + "<br>" + "<span>KST</span>" + (24+h*1) + ":" + m + ":" + s;
+            cTime.innerHTML = calendar+"<br>" + "<span>KST</span>" + (h) + ":" + m + ":" + s;
+            setTimeout("myFunctionKST()", 1000);
+        }
+        function position(x) {
+                var zero = '';
+                x = x.toString();
+                if (x.length < 2) {
+                    for (i = 0; i < 2 - x.length; i++) {
+                        zero += '0';
+                    }
+                }
+                return zero + x;
+            }
+</script>
+    <!-- 시간 end -->
 </body>
 </html>
