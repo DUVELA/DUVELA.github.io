@@ -72,9 +72,9 @@
             var s = position(d.getSeconds());
             var calendar = d.getFullYear() + "." + (d.getMonth() + 1) + "." + d.getDate()
 
-            if (h > 23) return cTime.innerHTML = calendar + "<br>" + "<span>KST</span>" +  (h-24) + ":" + m + ":" + s;
-            if (h < 0) return  cTime.innerHTML = calendar + "<br>" + "<span>KST</span>" + (24+h*1) + ":" + m + ":" + s;
-            cTime.innerHTML = calendar+"<br>" + "<span>KST</span>" + (h) + ":" + m + ":" + s;
+            // if (h > 23) return cTime.innerHTML = calendar + "<br>" + "<span>KST</span>" +  (h-24) + ":" + m + ":" + s;
+            // if (h < 0) return  cTime.innerHTML = calendar + "<br>" + "<span>KST</span>" + (24+h*1) + ":" + m + ":" + s;
+            cTime.innerHTML = calendar+"<br>" + "<span>KST</span>" + h + ":" + m + ":" + s;
             setTimeout("myFunctionKST()", 1000);
         }
         function position(x) {
